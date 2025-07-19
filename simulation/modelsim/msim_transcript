@@ -1,0 +1,80 @@
+# Reading pref.tcl
+# do Processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor {C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor/Processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:22 on Jul 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor" C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor/Processor.v 
+# -- Compiling module imem
+# -- Compiling module ALUControl
+# -- Compiling module dmem
+# -- Compiling module regfile
+# -- Compiling module ALU
+# -- Compiling module mips
+# -- Compiling module datapath
+# -- Compiling module CU
+# -- Compiling module Processor
+# 
+# Top level modules:
+# 	Processor
+# End time: 22:25:22 on Jul 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor {C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor/Processor_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:22 on Jul 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor" C:/Users/josep/OneDrive/Desktop/Quartus/MIPS_Single_Cycle_Processor/Processor_tb.v 
+# -- Compiling module Processor_tb
+# 
+# Top level modules:
+# 	Processor_tb
+# End time: 22:25:22 on Jul 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Processor_tb 
+# Start time: 22:25:22 on Jul 18,2025
+# Loading work.Processor_tb
+# Loading work.Processor
+# Loading work.mips
+# Loading work.CU
+# Loading work.ALUControl
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.ALU
+# Loading work.imem
+# Loading work.dmem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# clk=1, reset=1, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00001000000000000000000000000000, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00001000000000000000000000000000, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00001000000000000000000000000000, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00001000000000000000000000000000, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000010000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=1, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# clk=0, reset=0, instr=00100000000000100000000000000101, out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# End time: 22:25:43 on Jul 18,2025, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0

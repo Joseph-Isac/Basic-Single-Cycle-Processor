@@ -1,0 +1,2 @@
+module CU
+( input opcode[5:0]

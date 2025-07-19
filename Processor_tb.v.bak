@@ -1,0 +1,2 @@
+module Processor_tb
+(	reg clk,reset
